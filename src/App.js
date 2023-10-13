@@ -8,8 +8,12 @@ export default function App() {
   async function getAdvice() {
     const res = await fetch("https://api.adviceslip.com/advice");
     const data = await res.json();
-    setCount((prevCount) => prevCount + 1);
-    setAdvice(data.slip.advice);
+    const newAdvice = data.slip.advice;
+
+    if (newAdvice !== advice) {
+      setAdvice(newAdvice);
+      setCount((prevCount) => prevCount + 1);
+    }
   }
 
   useEffect(() => {
