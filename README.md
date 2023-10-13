@@ -30,7 +30,8 @@ The Advice Generator is a React-based web application designed to enlighten and 
 Clone this repository and navigate into the directory. Then install the dependencies and run the application:
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd path/to/your/project
+git clone https://github.com/IoanLipan/React-Advice-App.git
+cd ReactAdvicesApp
 npm install
 npm start
+```
